@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page {
+    padding: 30px;
+}
+.main-nav {
+    background-color: #43281c;
+    color : #fbf2c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-content {
+    margin: 20px 0;
+}
+
+.nav-img {
+    height: 25px;
+    position: relative;
+    top: 3px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.box-name {
+    font-size: 16px;
+    color: #885a2d;
+    font-weight: normal;
+    padding: 15px 0;
+}
+
+.order-amount {
+    grid-area: amount;
+}
+
+.order-name {
+    grid-area: name;
+    font-weight: bold;
+}
+.order-price {
+    grid-area : price;
+    font-weight: bold;
+}
+.order-option {
+    grid-area: options;
+    color: #B08968;
+    font-size: 14px;
+}
+
+.order-option-list {
+    padding-bottom: 5px;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: "amount name price"
+                        "amount options price";
+    border-bottom: 2px solid #DDB892;
+    row-gap: 10px;
+    padding: 10px 0;  
+}
+
+.item-list:last-child{
+    border-bottom: none;
+}
+
+.box-name-order-inp {
+    background-color: inherit;
+    border: 2px solid #885a2d;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.fll-wi {
+    width: 100% !important;
+}
+
+.box-name-dv {
+    position: relative;
+}
+
+.box-name-order {
+    background-color: #eee1d5;
+    color: #885a2d;
+    padding: 3px;
+    font-size: 11px;
+    position: absolute;
+    top: -8px;
+    left: 30px;
+}
+
+.input-group {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.name-box {
+    margin-bottom: 20px;
+}
+
+.total-table {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.total-table tr {
+    font-weight: normal;
+}
+
+.total-table tr:last-child {
+    font-weight: bold;
+}
+
+.total-table tr td {
+    padding: 10px;
+}
+
+.total-table tr td:last-child {
+    text-align: right;
+}
+
+.but-sec {
+    width: 100%;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: #deb993;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.but-sec:hover {
+    background-color: #dcb792;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 20%); 
+}
+
+.total-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.order-sec {
+    grid-area: ordersec;
+}
+
+.pym-sec {
+    grid-area: pymsec;
+}
+
+.total-sec {
+    grid-area: totalsec;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ordersec pymsec"
+                        "totalsec totalsec";
+    row-gap: 30px;
+    column-gap: 30px;
+}

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.calc-tot {
+    background-color: black;
+    width: 300px;
+    color: white;
+}
+
+.calc-screen {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    padding: 0 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.right-buttons {
+    grid-area: rbuts;
+}
+
+.left-buttons {
+    grid-area: lbuts;
+}
+.calc-buttons {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "lbuts rbuts";
+    column-gap: 2px;
+}
+
+.but {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.right-buttons {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-buttons .but {
+    height: 70px;
+    margin-bottom: 2px;
+    background-color: #df974c;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right-buttons .but:last-child {
+    margin-bottom: 0;
+}
+
+.right-buttons .but:hover {
+    background-color: #f0ae68;
+}
+
+.right-buttons .but:active {
+    background-color: #f39a3b;
+}
+
+.left-buttons .but {
+    height: 70px;
+    background-color: #d8d9db;
+}
+
+.left-buttons .but:hover {
+    background-color: #edeef1;
+}
+
+.left-buttons .but:active {
+    background-color: #afafaf;
+}
+
+
+.zero-button {
+    grid-area: zbut;
+}
+
+.dele-button {
+    grid-area: dbut;
+}
+
+.num0 {
+    grid-area: num0;
+}
+
+.num1 {
+    grid-area: num1;
+}
+
+.num2 {
+    grid-area: num2;
+}
+
+.num3 {
+    grid-area: num3;
+}
+
+.num4 {
+    grid-area: num4;
+}
+
+.num5 {
+    grid-area: num5;
+}
+
+.num6 {
+    grid-area: num6;
+}
+
+.num7 {
+    grid-area: num7;
+}
+
+.num8 {
+    grid-area: num8;
+}
+
+.num9 {
+    grid-area: num9;
+}
+
+.left-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "zbut zbut dbut"
+                        "num7 num8 num9"
+                        "num4 num5 num6"
+                        "num1 num2 num3"
+                        "num0 num0 num0";
+    row-gap: 2px;
+    column-gap: 2px;
+}

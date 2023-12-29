@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Masters</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <h1 class="nav-content">
+            <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+                class="nav-img">
+            Coffee Masters
+        </h1>
+    </nav>
+
+    <div class="page">
+        <section class="order-sec box">
+            <h2 class="box-name">ITEMS</h2>
+            <ul class="orders">
+                <li class="item-list">
+                    <div class="order-amount">1x</div>
+                    <div class="order-name">Cappucino</div>
+                    <div class="order-price">$6.00</div>
+                    <ul class="order-option">
+                        <li class="order-option-list">Light Foam</li>
+                    </ul>
+                </li>
+
+                <li class="item-list">
+                    <div class="order-amount">1x</div>
+                    <div class="order-name">Cappucino</div>
+                    <div class="order-price">$7.90</div>
+                    <ul class="order-option">
+                        <li class="order-option-list">Almond Milk</li>
+                        <li class="order-option-list">Double Espresso Shot</li>
+                    </ul>
+                </li>
+
+                <li class="item-list">
+                    <div class="order-amount">1x</div>
+                    <div class="order-name">Croissant</div>
+                    <div class="order-price">$5.37</div>
+                    <ul class="order-option">
+                        <li class="order-option-list">Butter</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="pym-sec">
+            <div class="box name-box">
+                <h2 class="box-name">NAME</h2>
+                <div class="box-name-dv">
+                    <label class="box-name-order">Name for order</label>
+                    <input type="text" class="box-name-order-inp fll-wi">
+                </div>
+            </div>
+            <div class="box card-box">
+                <h2 class="box-name">PAYMENT</h2>
+                <div class="box-name-dv">
+                    <div class="input-group">
+                        <label class="box-name-order">Card Number</label>
+                        <input type="text" class="box-name-order-inp fll-wi">
+                    </div>
+                    <div class="input-group">
+                        <label class="box-name-order">CCV Number</label>
+                        <input type="text" class="box-name-order-inp">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="total-sec">
+            <table class="total-table">
+                <tbody>
+                    <tr>
+                        <td>Subtotal : </td>
+                        <td>$19.27</td>
+                    </tr>
+                    <tr>
+                        <td>Tax : </td>
+                        <td>$0.96</td>
+                    </tr>
+                    <tr>
+                        <td>Total: </td>
+                        <td>$20.23</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="but-sec">Place Order</button>
+        </section>
+    </div>
+</body>
+
+</html>
